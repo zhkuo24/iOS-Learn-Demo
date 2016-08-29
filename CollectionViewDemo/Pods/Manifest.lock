@@ -1,0 +1,15 @@
+PODS:
+  - RandomColorSwift (0.1.0)
+  - SnapKit (0.15.0)
+
+DEPENDENCIES:
+  - RandomColorSwift
+  - SnapKit (~> 0.15.0)
+
+SPEC CHECKSUMS:
+  RandomColorSwift: b2e95d6d3670def6d2f907ec7b7041138b268ac9
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+
+PODFILE CHECKSUM: e3b8b9055034ff8b8da1d4da118acf78c126958c
+
+COCOAPODS: 1.0.1
