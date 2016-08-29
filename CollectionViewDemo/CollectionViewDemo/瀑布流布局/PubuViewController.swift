@@ -26,7 +26,7 @@ class PubuViewController: UIViewController {
             make.size.equalTo(self.view)
         }
         
-//        collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.dataSource = self
         //注册需要的cell
         collectionView.registerNib(UINib(nibName: "ColorViewCell", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "colorCell")
@@ -34,11 +34,18 @@ class PubuViewController: UIViewController {
     
     
     func addItem() {
-        print(#function)
+        
+        colors.append(randomColor())
+        collectionView.insertItemsAtIndexPaths([NSIndexPath(forItem: colors.count-1, inSection: 0)])
+        
+        
     }
     
     func removeItem() {
-        print(#function)
+        
+        colors.removeLast()
+        collectionView.deleteItemsAtIndexPaths([NSIndexPath(forItem: colors.count, inSection: 0)])
+        
     }
     
     
@@ -59,26 +66,38 @@ class PubuViewController: UIViewController {
         
         
         
-        let flowLayout = UICollectionViewFlowLayout()
+//        let flowLayout = UICollectionViewFlowLayout()
         //        let cv = UICollectionView(frame: UIScreen.mainScreen().bounds, collectionViewLayout: flowLayout)
-        let cv = UICollectionView(frame: CGRectZero, collectionViewLayout: PubuLayout())
+        //不在使用自带的 collectionViewLayout ，而是自定义的 PubuLayout
+        let layout = PubuLayout()
+        let cv = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
+        layout.itemSize = CGSize(width: 50, height: 50)
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
+        
         cv.backgroundColor = UIColor.whiteColor()
         cv.showsVerticalScrollIndicator = false
-        flowLayout.scrollDirection = UICollectionViewScrollDirection.Vertical
-        
-        
-        //这些属性可以在storyboard中设置，也可以在flowlayout的代理方法中设置
-        flowLayout.minimumInteritemSpacing = 10
-        flowLayout.minimumLineSpacing = 10
-        flowLayout.sectionInset = UIEdgeInsetsMake(15, 15, 20, 20)
-        flowLayout.itemSize = CGSize(width: 100, height: 100)
         
         return cv
         
     }()
 
 }
+//MARK: - 实现 collectionView 的 Delegate 
 
+extension PubuViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        collectionView.performBatchUpdates({ 
+            collectionView.deleteItemsAtIndexPaths([indexPath])
+            colors.removeAtIndex(indexPath.row)
+            }) { (_) in
+                collectionView.reloadData()
+        }
+        collectionView.reloadData()
+    
+    }
+}
 
 //MARK: - 实现 collectionView 的 DataSource
 
