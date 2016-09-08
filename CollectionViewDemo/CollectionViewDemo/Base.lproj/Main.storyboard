@@ -43,6 +43,8 @@
                         <segue destination="vLj-eE-TE4" kind="show" identifier="toBaseCode" id="vm0-8m-tdd"/>
                         <segue destination="fXI-jm-758" kind="show" identifier="toBaseColletciton" id="JVu-WU-3m7"/>
                         <segue destination="vtM-ag-xyA" kind="show" identifier="toPubu" id="gK2-Bt-G5X"/>
+                        <segue destination="xwy-bT-C6x" kind="show" identifier="toLine" id="Ugv-9E-MBy"/>
+                        <segue destination="iHY-Ar-a6M" kind="show" identifier="toWaterfall" id="sRC-Hb-HZq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBr-GG-Wsx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,6 +190,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8f-WO-rIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2351" y="388"/>
+        </scene>
+        <!--Waterfall View Controller-->
+        <scene sceneID="S08-ra-lff">
+            <objects>
+                <viewController id="iHY-Ar-a6M" customClass="WaterfallViewController" customModule="CollectionViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p1V-Uq-MFL"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Jo-Bv-YFt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iLS-BA-xy9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUs-Wg-lfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="1156"/>
+        </scene>
+        <!--线性和圆形布局-->
+        <scene sceneID="NVZ-Db-Hun">
+            <objects>
+                <viewController id="xwy-bT-C6x" customClass="LineViewController" customModule="CollectionViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YNI-Tc-n9p"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCs-dw-bAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sGE-H4-GZf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdp-3V-7m3">
+                                <rect key="frame" x="260" y="72" width="80" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="切换布局">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ChangeLayout" destination="xwy-bT-C6x" eventType="touchUpInside" id="pSr-MZ-l2N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vdp-3V-7m3" firstAttribute="centerX" secondItem="sGE-H4-GZf" secondAttribute="centerX" id="PWI-QK-iX6"/>
+                            <constraint firstItem="Vdp-3V-7m3" firstAttribute="top" secondItem="YNI-Tc-n9p" secondAttribute="bottom" constant="8" symbolic="YES" id="tue-a3-c7J"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="EqF-SD-dKU"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="线性和圆形布局" id="iRb-AE-bAm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pIm-hJ-ttm">
+                            <connections>
+                                <action selector="AddItem:" destination="xwy-bT-C6x" id="bLu-S0-UTw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CmJ-gQ-6im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="1156"/>
         </scene>
         <!--Pubu View Controller-->
         <scene sceneID="Qb7-wT-Juo">

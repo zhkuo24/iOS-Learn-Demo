@@ -1,15 +1,18 @@
 PODS:
+  - MJRefresh (3.1.12)
   - RandomColorSwift (0.1.0)
   - SnapKit (0.15.0)
 
 DEPENDENCIES:
+  - MJRefresh
   - RandomColorSwift
   - SnapKit (~> 0.15.0)
 
 SPEC CHECKSUMS:
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   RandomColorSwift: b2e95d6d3670def6d2f907ec7b7041138b268ac9
   SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
 
-PODFILE CHECKSUM: e3b8b9055034ff8b8da1d4da118acf78c126958c
+PODFILE CHECKSUM: f018a16833cda9ec3da3ed8b3409f2ad79fa070e
 
 COCOAPODS: 1.0.1

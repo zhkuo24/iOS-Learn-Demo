@@ -13,6 +13,7 @@ import UIKit
 class PubuLayout: UICollectionViewFlowLayout {
     
     private var insertIndexPath = [NSIndexPath]()
+    private var deleteIndexPath = [NSIndexPath]()
     
     
     override init() {
@@ -49,19 +50,35 @@ class PubuLayout: UICollectionViewFlowLayout {
         sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
         
     }
+//    override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+//        print(#function)
+//        return nil
+//    }
     
-    
+    //增加操作时候的动画，设置cell的初始属性，结束属性默认就是在indexPath位置
     override func initialLayoutAttributesForAppearingItemAtIndexPath(itemIndexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         let attributes = super.initialLayoutAttributesForAppearingItemAtIndexPath(itemIndexPath)
         if insertIndexPath.contains(itemIndexPath) {
-            attributes!.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.2, 0.2), CGFloat(M_PI));
-            attributes!.center = CGPointMake(CGRectGetMidX(collectionView!.bounds), CGRectGetMaxY(collectionView!.bounds));
+            attributes!.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.2, 0.2), CGFloat(M_PI))
+            attributes!.center = CGPointMake(CGRectGetMidX(collectionView!.bounds), CGRectGetMaxY(collectionView!.bounds))
             
         }
         
         return attributes
         
     }
+    
+    //删除操作时候的属性，主要设置cell的最后位置的属性
+    override func finalLayoutAttributesForDisappearingItemAtIndexPath(itemIndexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
+        let attributes = super.finalLayoutAttributesForDisappearingItemAtIndexPath(itemIndexPath)
+        if deleteIndexPath.contains(itemIndexPath) {
+            attributes?.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.2, 0.2), CGFloat(M_PI))
+            attributes?.center = CGPointMake(CGRectGetMidX((collectionView!.bounds)), CGRectGetMaxY((collectionView!.bounds)))
+        }
+        return attributes
+        
+    }
+    
     
     override func prepareForAnimatedBoundsChange(oldBounds: CGRect) {
         print(#function)
@@ -70,9 +87,20 @@ class PubuLayout: UICollectionViewFlowLayout {
         print(#function)
         super.prepareForCollectionViewUpdates(updateItems)
         insertIndexPath = [NSIndexPath]()
+        deleteIndexPath = [NSIndexPath]()
         for update in updateItems {
-            if update.updateAction == UICollectionUpdateAction.Insert {
+            
+            switch update.updateAction {
+            case .Insert:
                 insertIndexPath.append(update.indexPathAfterUpdate!)
+            case .Delete:
+                deleteIndexPath.append(update.indexPathBeforeUpdate!)
+            default:
+                print("error")
+            }
+            
+            if update.updateAction == UICollectionUpdateAction.Insert {
+                
             }
         }
         
@@ -82,9 +110,11 @@ class PubuLayout: UICollectionViewFlowLayout {
     
     
     
+    
 //    override func collectionViewContentSize() -> CGSize {
 //        return CGSizeMake(300, 1400)
 //    }
+    
     
     
 

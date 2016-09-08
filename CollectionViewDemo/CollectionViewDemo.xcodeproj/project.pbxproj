@@ -18,13 +18,23 @@
 		3B26ADEC1D731C85008B83B2 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26ADE71D731C85008B83B2 /* HeaderCollectionReusableView.swift */; };
 		3B26ADED1D731C85008B83B2 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26ADE81D731C85008B83B2 /* ImageCell.swift */; };
 		3B26ADEF1D731C91008B83B2 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26ADEE1D731C91008B83B2 /* HomeTableViewController.swift */; };
-		3B26ADF21D731CFF008B83B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26ADF11D731CFF008B83B2 /* BaseViewController.swift */; };
-		3B26ADF51D7320E6008B83B2 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26ADF31D7320E6008B83B2 /* ImageCollectionViewCell.swift */; };
-		3B26ADF61D7320E6008B83B2 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B26ADF41D7320E6008B83B2 /* ImageCollectionViewCell.xib */; };
-		3B89E6E81D7458D10072CA49 /* PubuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89E6E71D7458D10072CA49 /* PubuViewController.swift */; };
-		3B89E6EB1D7459CC0072CA49 /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89E6E91D7459CC0072CA49 /* ColorViewCell.swift */; };
-		3B89E6EC1D7459CC0072CA49 /* ColorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B89E6EA1D7459CC0072CA49 /* ColorViewCell.xib */; };
-		3B89E6EE1D7461920072CA49 /* PubuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B89E6ED1D7461920072CA49 /* PubuLayout.swift */; };
+		3B309BAA1D81A16A00D11772 /* WaterfallLayouDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B309BA91D81A16A00D11772 /* WaterfallLayouDelegate.swift */; };
+		3B3DBCFA1D75A8380011747E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBCF71D75A8380011747E /* BaseViewController.swift */; };
+		3B3DBCFB1D75A8380011747E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBCF81D75A8380011747E /* ImageCollectionViewCell.swift */; };
+		3B3DBCFC1D75A8380011747E /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3DBCF91D75A8380011747E /* ImageCollectionViewCell.xib */; };
+		3B3DBD0D1D75D71F0011747E /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD091D75D71F0011747E /* ColorViewCell.swift */; };
+		3B3DBD0E1D75D71F0011747E /* ColorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3DBD0A1D75D71F0011747E /* ColorViewCell.xib */; };
+		3B3DBD0F1D75D71F0011747E /* PubuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD0B1D75D71F0011747E /* PubuLayout.swift */; };
+		3B3DBD101D75D71F0011747E /* PubuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD0C1D75D71F0011747E /* PubuViewController.swift */; };
+		3B3DBD161D75D7290011747E /* LineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD121D75D7290011747E /* LineCell.swift */; };
+		3B3DBD171D75D7290011747E /* LineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3DBD131D75D7290011747E /* LineCell.xib */; };
+		3B3DBD181D75D7290011747E /* LineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD141D75D7290011747E /* LineLayout.swift */; };
+		3B3DBD191D75D7290011747E /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD151D75D7290011747E /* LineViewController.swift */; };
+		3B3DBD1B1D75D96D0011747E /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3DBD1A1D75D96D0011747E /* CircleLayout.swift */; };
+		3B9EDC971D8028F100ABF1DE /* MyWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EDC951D8028F100ABF1DE /* MyWaterfallCell.swift */; };
+		3B9EDC981D8028F100ABF1DE /* MyWaterfallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EDC961D8028F100ABF1DE /* MyWaterfallCell.xib */; };
+		3B9EDC9E1D802A1300ABF1DE /* WaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EDC9D1D802A1300ABF1DE /* WaterfallViewController.swift */; };
+		3B9EDCA01D802EE100ABF1DE /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EDC9F1D802EE100ABF1DE /* WaterfallLayout.swift */; };
 		40658AD17B1662AFFA0A3166 /* Pods_CollectionViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B87356723676C2515BD9F45 /* Pods_CollectionViewDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +52,23 @@
 		3B26ADE71D731C85008B83B2 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		3B26ADE81D731C85008B83B2 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		3B26ADEE1D731C91008B83B2 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		3B26ADF11D731CFF008B83B2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		3B26ADF31D7320E6008B83B2 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		3B26ADF41D7320E6008B83B2 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
-		3B89E6E71D7458D10072CA49 /* PubuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubuViewController.swift; sourceTree = "<group>"; };
-		3B89E6E91D7459CC0072CA49 /* ColorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
-		3B89E6EA1D7459CC0072CA49 /* ColorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewCell.xib; sourceTree = "<group>"; };
-		3B89E6ED1D7461920072CA49 /* PubuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubuLayout.swift; sourceTree = "<group>"; };
+		3B309BA91D81A16A00D11772 /* WaterfallLayouDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayouDelegate.swift; sourceTree = "<group>"; };
+		3B3DBCF71D75A8380011747E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3B3DBCF81D75A8380011747E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B3DBCF91D75A8380011747E /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B3DBD091D75D71F0011747E /* ColorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
+		3B3DBD0A1D75D71F0011747E /* ColorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewCell.xib; sourceTree = "<group>"; };
+		3B3DBD0B1D75D71F0011747E /* PubuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubuLayout.swift; sourceTree = "<group>"; };
+		3B3DBD0C1D75D71F0011747E /* PubuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubuViewController.swift; sourceTree = "<group>"; };
+		3B3DBD121D75D7290011747E /* LineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCell.swift; sourceTree = "<group>"; };
+		3B3DBD131D75D7290011747E /* LineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineCell.xib; sourceTree = "<group>"; };
+		3B3DBD141D75D7290011747E /* LineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayout.swift; sourceTree = "<group>"; };
+		3B3DBD151D75D7290011747E /* LineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		3B3DBD1A1D75D96D0011747E /* CircleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
+		3B9EDC951D8028F100ABF1DE /* MyWaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWaterfallCell.swift; sourceTree = "<group>"; };
+		3B9EDC961D8028F100ABF1DE /* MyWaterfallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWaterfallCell.xib; sourceTree = "<group>"; };
+		3B9EDC9D1D802A1300ABF1DE /* WaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallViewController.swift; sourceTree = "<group>"; };
+		3B9EDC9F1D802EE100ABF1DE /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 		4B87356723676C2515BD9F45 /* Pods_CollectionViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58834EFEB6FA68260C027F88 /* Pods-CollectionViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo/Pods-CollectionViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A07EB39B86617DFE243F5A72 /* Pods-CollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo/Pods-CollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				3B26ADE31D731C85008B83B2 /* 基本流水布局-storyboard */,
-				3B26ADF01D731CC4008B83B2 /* 基本流水布局-代码 */,
-				3B89E6E61D7458A30072CA49 /* 瀑布流布局 */,
+				3B3DBCF61D75A8380011747E /* 基本流水布局-代码 */,
+				3B3DBD081D75D71F0011747E /* 自定义动画 */,
+				3B3DBD111D75D7290011747E /* 线性布局和圆形布局 */,
+				3B9EDC941D80278A00ABF1DE /* 自定义瀑布流布局 */,
 				3B26ADD01D72E847008B83B2 /* Model */,
 				3B26ADB61D72C107008B83B2 /* AppDelegate.swift */,
 				3B26ADEE1D731C91008B83B2 /* HomeTableViewController.swift */,
@@ -121,26 +143,49 @@
 			path = "基本流水布局-storyboard";
 			sourceTree = "<group>";
 		};
-		3B26ADF01D731CC4008B83B2 /* 基本流水布局-代码 */ = {
+		3B3DBCF61D75A8380011747E /* 基本流水布局-代码 */ = {
 			isa = PBXGroup;
 			children = (
-				3B26ADF11D731CFF008B83B2 /* BaseViewController.swift */,
-				3B26ADF31D7320E6008B83B2 /* ImageCollectionViewCell.swift */,
-				3B26ADF41D7320E6008B83B2 /* ImageCollectionViewCell.xib */,
+				3B3DBCF71D75A8380011747E /* BaseViewController.swift */,
+				3B3DBCF81D75A8380011747E /* ImageCollectionViewCell.swift */,
+				3B3DBCF91D75A8380011747E /* ImageCollectionViewCell.xib */,
 			);
-			name = "基本流水布局-代码";
-			path = "基本流水布局-storyboard/基本流水布局-代码";
+			path = "基本流水布局-代码";
 			sourceTree = "<group>";
 		};
-		3B89E6E61D7458A30072CA49 /* 瀑布流布局 */ = {
+		3B3DBD081D75D71F0011747E /* 自定义动画 */ = {
 			isa = PBXGroup;
 			children = (
-				3B89E6E71D7458D10072CA49 /* PubuViewController.swift */,
-				3B89E6ED1D7461920072CA49 /* PubuLayout.swift */,
-				3B89E6E91D7459CC0072CA49 /* ColorViewCell.swift */,
-				3B89E6EA1D7459CC0072CA49 /* ColorViewCell.xib */,
+				3B3DBD091D75D71F0011747E /* ColorViewCell.swift */,
+				3B3DBD0A1D75D71F0011747E /* ColorViewCell.xib */,
+				3B3DBD0B1D75D71F0011747E /* PubuLayout.swift */,
+				3B3DBD0C1D75D71F0011747E /* PubuViewController.swift */,
 			);
-			path = "瀑布流布局";
+			path = "自定义动画";
+			sourceTree = "<group>";
+		};
+		3B3DBD111D75D7290011747E /* 线性布局和圆形布局 */ = {
+			isa = PBXGroup;
+			children = (
+				3B3DBD121D75D7290011747E /* LineCell.swift */,
+				3B3DBD131D75D7290011747E /* LineCell.xib */,
+				3B3DBD141D75D7290011747E /* LineLayout.swift */,
+				3B3DBD1A1D75D96D0011747E /* CircleLayout.swift */,
+				3B3DBD151D75D7290011747E /* LineViewController.swift */,
+			);
+			path = "线性布局和圆形布局";
+			sourceTree = "<group>";
+		};
+		3B9EDC941D80278A00ABF1DE /* 自定义瀑布流布局 */ = {
+			isa = PBXGroup;
+			children = (
+				3B9EDC951D8028F100ABF1DE /* MyWaterfallCell.swift */,
+				3B9EDC961D8028F100ABF1DE /* MyWaterfallCell.xib */,
+				3B9EDC9F1D802EE100ABF1DE /* WaterfallLayout.swift */,
+				3B309BA91D81A16A00D11772 /* WaterfallLayouDelegate.swift */,
+				3B9EDC9D1D802A1300ABF1DE /* WaterfallViewController.swift */,
+			);
+			path = "自定义瀑布流布局";
 			sourceTree = "<group>";
 		};
 		D4100ACB54B768D01BAD0448 /* Pods */ = {
@@ -223,10 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B26ADC11D72C107008B83B2 /* LaunchScreen.storyboard in Resources */,
-				3B89E6EC1D7459CC0072CA49 /* ColorViewCell.xib in Resources */,
+				3B3DBD0E1D75D71F0011747E /* ColorViewCell.xib in Resources */,
 				3B26ADBE1D72C107008B83B2 /* Assets.xcassets in Resources */,
-				3B26ADF61D7320E6008B83B2 /* ImageCollectionViewCell.xib in Resources */,
+				3B9EDC981D8028F100ABF1DE /* MyWaterfallCell.xib in Resources */,
+				3B3DBD171D75D7290011747E /* LineCell.xib in Resources */,
 				3B26ADBC1D72C107008B83B2 /* Main.storyboard in Resources */,
+				3B3DBCFC1D75A8380011747E /* ImageCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,18 +333,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B26ADEF1D731C91008B83B2 /* HomeTableViewController.swift in Sources */,
+				3B3DBD0F1D75D71F0011747E /* PubuLayout.swift in Sources */,
+				3B3DBD101D75D71F0011747E /* PubuViewController.swift in Sources */,
 				3B26ADE91D731C85008B83B2 /* BaseCollectionViewController.swift in Sources */,
+				3B3DBCFB1D75A8380011747E /* ImageCollectionViewCell.swift in Sources */,
+				3B9EDC9E1D802A1300ABF1DE /* WaterfallViewController.swift in Sources */,
+				3B3DBD161D75D7290011747E /* LineCell.swift in Sources */,
+				3B3DBD0D1D75D71F0011747E /* ColorViewCell.swift in Sources */,
+				3B309BAA1D81A16A00D11772 /* WaterfallLayouDelegate.swift in Sources */,
+				3B9EDCA01D802EE100ABF1DE /* WaterfallLayout.swift in Sources */,
 				3B26ADEB1D731C85008B83B2 /* FooterCollectionReusableView.swift in Sources */,
+				3B3DBD181D75D7290011747E /* LineLayout.swift in Sources */,
 				3B26ADB71D72C107008B83B2 /* AppDelegate.swift in Sources */,
+				3B9EDC971D8028F100ABF1DE /* MyWaterfallCell.swift in Sources */,
+				3B3DBD191D75D7290011747E /* LineViewController.swift in Sources */,
 				3B26ADEA1D731C85008B83B2 /* BaseDetailViewController.swift in Sources */,
-				3B89E6EE1D7461920072CA49 /* PubuLayout.swift in Sources */,
-				3B26ADF21D731CFF008B83B2 /* BaseViewController.swift in Sources */,
-				3B26ADF51D7320E6008B83B2 /* ImageCollectionViewCell.swift in Sources */,
-				3B89E6E81D7458D10072CA49 /* PubuViewController.swift in Sources */,
-				3B89E6EB1D7459CC0072CA49 /* ColorViewCell.swift in Sources */,
+				3B3DBCFA1D75A8380011747E /* BaseViewController.swift in Sources */,
 				3B26ADEC1D731C85008B83B2 /* HeaderCollectionReusableView.swift in Sources */,
 				3B26ADED1D731C85008B83B2 /* ImageCell.swift in Sources */,
 				3B26ADD71D72E847008B83B2 /* DataModel.swift in Sources */,
+				3B3DBD1B1D75D96D0011747E /* CircleLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

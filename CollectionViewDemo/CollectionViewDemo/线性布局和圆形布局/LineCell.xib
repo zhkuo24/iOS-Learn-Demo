@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="lineCell" id="gTV-IL-0wX" customClass="LineCell" customModule="CollectionViewDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="159"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-rr-HId">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="159"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Dna-rr-HId" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="isf-Uc-qf2"/>
+                <constraint firstItem="Dna-rr-HId" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sT4-9Z-eeo"/>
+                <constraint firstAttribute="bottom" secondItem="Dna-rr-HId" secondAttribute="bottom" id="t8B-MF-dpT"/>
+                <constraint firstAttribute="trailing" secondItem="Dna-rr-HId" secondAttribute="trailing" id="vWp-ij-6wc"/>
+            </constraints>
+            <size key="customSize" width="218" height="159"/>
+            <connections>
+                <outlet property="lineImageView" destination="Dna-rr-HId" id="uUe-5j-Pnq"/>
+            </connections>
+            <point key="canvasLocation" x="565" y="399.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

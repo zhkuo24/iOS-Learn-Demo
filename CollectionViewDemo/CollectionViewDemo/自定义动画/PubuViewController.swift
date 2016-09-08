@@ -16,7 +16,7 @@ class PubuViewController: UIViewController {
         
        
 
-        title = "瀑布流布局"
+        title = "自定义插入、删除 cell 动画"
         let button1 = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(PubuViewController.addItem))
         let button2 = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Trash, target: self, action: #selector(PubuViewController.removeItem))
         navigationItem.rightBarButtonItems = [button1, button2]
@@ -38,6 +38,19 @@ class PubuViewController: UIViewController {
         colors.append(randomColor())
         collectionView.insertItemsAtIndexPaths([NSIndexPath(forItem: colors.count-1, inSection: 0)])
         
+//        collectionView.performBatchUpdates({ 
+////            colors.append(randomColor())
+////            self.collectionView.insertItemsAtIndexPaths([NSIndexPath(forItem: colors.count-1, inSection: 0)])
+//            colors.removeLast()
+//            colors.removeLast()
+//            self.collectionView.deleteItemsAtIndexPaths([NSIndexPath(forItem: 2, inSection: 0)])
+//            self.collectionView.deleteItemsAtIndexPaths([NSIndexPath(forItem: 4, inSection: 0)])
+//
+//            }) { (_) in
+//                self.collectionView.reloadData()
+//        }
+        
+       
         
     }
     
@@ -97,6 +110,7 @@ extension PubuViewController: UICollectionViewDelegateFlowLayout {
         collectionView.reloadData()
     
     }
+    
 }
 
 //MARK: - 实现 collectionView 的 DataSource

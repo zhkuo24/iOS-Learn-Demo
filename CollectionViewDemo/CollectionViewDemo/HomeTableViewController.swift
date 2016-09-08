@@ -10,7 +10,7 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
     
-    var datas: [String] = ["1. 最基本的流水线布局-Storyboard", "2. 最基本的流水线布局-代码", "3. 瀑布布局加动画", "4. 线性布局", "5. 圆形布局"]
+    var datas: [String] = ["1. 最基本的流水线布局 - Storyboard", "2. 最基本的流水线布局 - 代码", "3. 自定义插入、删除 cell 的动画", "4. 线性布局和圆形布局", "5. 瀑布流布局"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +63,9 @@ class HomeTableViewController: UITableViewController {
         case 2:
             performSegueWithIdentifier("toPubu", sender: nil)
         case 3:
-            print(datas[3])
+            performSegueWithIdentifier("toLine", sender: nil)
+        case 4:
+            performSegueWithIdentifier("toWaterfall", sender: nil)
         default:
             print("default")
         }

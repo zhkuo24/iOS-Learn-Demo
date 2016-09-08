@@ -44,12 +44,14 @@ class BaseViewController: UIViewController {
         case .Began:
             
             collectionView.beginInteractiveMovementForItemAtIndexPath(indexPath)
+            print("Began")
             
         case .Changed:
             collectionView.updateInteractiveMovementTargetPosition(point)
-            
+            print("Changed")
         case .Ended:
             collectionView.endInteractiveMovement()
+            print("Ended")
         default:
             collectionView.cancelInteractiveMovement()
         }
@@ -138,6 +140,19 @@ extension BaseViewController: UICollectionViewDataSource {
         return cell
     }
     
+//    func collectionView(collectionView: UICollectionView, canMoveItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        return true
+//    }
+    
+    
+    //移动结束后调用的方法
+    
+    func collectionView(collectionView: UICollectionView, moveItemAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        dota2Pic.removeAtIndex(sourceIndexPath.item)
+        let imageName = dota2Pic[sourceIndexPath.item]
+        dota2Pic.insert(imageName, atIndex: destinationIndexPath.item)
+    }
+    
     
     
     
@@ -183,13 +198,7 @@ extension BaseViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - UICollectionView 的 Delegate 方法
 extension BaseViewController: UICollectionViewDelegate {
     
-    //移动结束后调用的方法
-    
-    func collectionView(collectionView: UICollectionView, moveItemAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
-        dota2Pic.removeAtIndex(sourceIndexPath.item)
-        let imageName = dota2Pic[sourceIndexPath.item]
-        dota2Pic.insert(imageName, atIndex: destinationIndexPath.item)
-    }
+  
     
     
     //设置选中某个cell
@@ -209,16 +218,16 @@ extension BaseViewController: UICollectionViewDelegate {
     // 高亮动画
     func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
         print(#function)
-        let selectCell = collectionView.cellForItemAtIndexPath(indexPath)
-        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { 
-            selectCell?.transform = CGAffineTransformMakeScale(2.0, 2.0)
-            }, completion: nil)
+//        let selectCell = collectionView.cellForItemAtIndexPath(indexPath)
+//        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+//            selectCell?.transform = CGAffineTransformMakeScale(2.0, 2.0)
+//            }, completion: nil)
     }
     func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
-        let selectCell = collectionView.cellForItemAtIndexPath(indexPath)
-        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
-            selectCell?.transform = CGAffineTransformMakeScale(1.0, 1.0)
-            }, completion: nil)
+//        let selectCell = collectionView.cellForItemAtIndexPath(indexPath)
+//        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+//            selectCell?.transform = CGAffineTransformMakeScale(1.0, 1.0)
+//            }, completion: nil)
     }
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         print(#function)
@@ -231,6 +240,7 @@ extension BaseViewController: UICollectionViewDelegate {
     }
     
 
+    
     
     /*
     // 弹出cut copy paste菜单
