@@ -9,9 +9,11 @@
 import UIKit
 
 class Demo2ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(view)
 
         // Do any additional setup after loading the view.
     }

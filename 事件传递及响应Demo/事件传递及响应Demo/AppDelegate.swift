@@ -29,9 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         //
         // Demo2
-        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewControllerWithIdentifier("Demo2") as! Demo2ViewController
+        let vc = sb.instantiateViewControllerWithIdentifier("Demo2")
+        print(vc)
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         
